@@ -19,8 +19,6 @@ const InsightStream = () => {
         stream.read((rawEvent) => {
           if (!isActive) return;
 
-          console.log("RAW EVENT:", rawEvent);
-
           let parsed = null;
 
           if (rawEvent?.data && typeof rawEvent.data === "string") {

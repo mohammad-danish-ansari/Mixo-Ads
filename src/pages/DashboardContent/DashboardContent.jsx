@@ -3,10 +3,10 @@ import {
   ArrowUpDown,
   Edit,
   Loader2,
-  Users,
   AlertCircle,
   CheckCircle,
   Clock,
+  Megaphone,
  
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +47,7 @@ const DashboardContent = () => {
     {
       title: "Total Campaigns",
       value: campaigns?.length ?? 0,
-      icon: Users,
+      icon: Megaphone,
       bgColor: "bg-blue-50",
       textColor: "text-blue-600",
     },

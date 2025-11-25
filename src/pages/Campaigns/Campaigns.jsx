@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Search, Filter, ArrowUpDown, ChevronDown, Loader2, Edit } from "lucide-react";
+import { Search, Filter, ArrowUpDown, Loader2, Edit } from "lucide-react";
 import { showAlert } from "../../utils/alerts";
 import { getAllCampaigns } from "../../services/campaignsService";
 import { useNavigate } from "react-router-dom";
