@@ -75,17 +75,17 @@ const DashboardContent = () => {
   ];
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
+      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 mb-8">
           {TopCards.map((card, index) => {
             const IconComponent = card.icon;
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg border border-gray-200 p-3 hover:shadow-md transition-shadow"
+                className="bg-white rounded-lg border border-gray-200 p-3 hover:shadow-md transition-shadow w-full"
               >
                 <div className="flex items-center">
                   <div className={`p-3 rounded-lg ${card.bgColor} mr-4`}>
-                    <IconComponent className={`h-3 w-3 ${card.textColor}`} />
+                    <IconComponent className={`h-4 w-4 ${card.textColor}`} />
                   </div>
                   <div>
                     <p className="text-xs font-small text-gray-600">
